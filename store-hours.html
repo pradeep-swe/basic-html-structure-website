@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Pradeep Pandey" />
+    <meta name="Description" content="HTML elements practice website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="taco.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Little taco shop</title>
+  </head>
+  <body>
+    <!--=====================================Header Section===================================-->
+    <header id="home-header" class="header">
+      <section id="header-nav-section">
+        <h1 id="home-header-heading" class="heading">Little Taco Shop Hours</h1>
+
+        <!--Site Navigation Links-->
+        <nav id="navigation-bar" aria-label="Primary Navigation">
+          <ul id="header-navigation-items" class="navigation-items">
+            <li class="navigation-item">
+              <a href="index.html" target="_self" aria-label="Home Page"
+                >Home</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="index.html#about-lts-heading" aria-label="About LTS"
+                >About LTS</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="index.html#article-our-menu" aria-label="Menu"
+                >Our Menu</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="contacts.html" aria-label="Contact Us">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!--Header Figure Section-->
+      <section id="header-figure-section">
+        <figure id="header-figure">
+          <img
+            src="./images/tacos_tray.png"
+            alt="Tacos And Drinks"
+            width="500"
+            height="300"
+            loading="lazy"
+          />
+          <figcaption id="header-figure-caption">
+            A Tray of Tasty Tacos
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="horizontal-rule" />
+    </header>
+
+    <!--============================================Main Section===================================-->
+    <main id="store-hrs-main">
+      <section id="store-hrs-main-sec">
+        <dl id="open-hrs">
+          <caption>
+            We are open 7 days a week!
+          </caption>
+          <br />
+          <br />
+          <dt>Sunday - Thursday</dt>
+          <dd>11am - 9pm</dd>
+          <dt>Friday - Saturday</dt>
+          <dd>11am - 11pm</dd>
+        </dl>
+      </section>
+    </main>
+    <hr />
+
+    <!--===========================================Footer Section========================================-->
+    <footer id="home-footer">
+      <p>
+        <a href="#home-header">Back To Top</a>
+      </p>
+
+      <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+  </body>
+</html>

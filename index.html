@@ -1,0 +1,164 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Author" content="Pradeep Pandey" />
+        <meta name="Description" content="HTML elements practice website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="taco.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Little taco shop</title>
+    </head>
+    <body>
+        <!--
+            This is a demo website that utilizes basic html tags, semantic HTML, and creation of
+            basic html structure. More than just a basic division (div) tags I tried to incorporate 
+            and utilize the semantic HTML as much as I could, consider the depth of my knowledge 
+            as a complete  beginner. Also initializations with Beginner freindly SEO meta tags and 
+            attributes. Moreover, this site also try to take care of people who rely on 
+            Assistive Technology, basic attributes of ARIA (Accessible Rich Internet Applications)
+            such as label is used to achieve this in a beginner friendly way. 
+            
+            Desclaimer: Neither a Professional site
+                        Nor for a Professional Reference
+                        Not a Tutorial.
+                        Can be improvized to meet requirements
+
+            Feel free to comment if any suggestions
+        -->
+        <!--================================Header Section============================-->
+        <header id="home-header" class="header">
+        <section id="header-nav-section">
+            <h1 id="home-header-heading" class="heading">
+            Welcome to little taco shop
+            </h1>
+
+            <!--Primary Navigation Section-->
+            <nav id="navigation-bar" aria-label="Primary Navigation">
+            <ul id="header-navigation-items" class="navigation-items">
+                <li class="navigation-item">
+                <a href="about.html" target="_self" aria-label="About Us Page">About Us</a>
+                </li>
+                <li class="navigation-item"><a href="#taco-menu-table" aria-label="Menu">Our Menu</a></li>
+                <li class="navigation-item"><a href="store-hours.html" aria-label="Store Open Hours">Store Hours</a></li>
+                <li class="navigation-item"><a href="contacts.html" aria-label="Contact Us Page ">Contact Us</a></li>
+            </ul>
+            </nav>
+        </section>
+
+        <!--=======Header Section Figure========-->
+        <section id="header-figure-section">
+            <figure id="header-figure">
+            <img
+                src="./images/tacos_and_drinks.png"
+                alt="Tacos And Drinks"
+                width="500"
+                height="300"
+            />
+            <figcaption id="header-figure-caption">Tacos and Drinks</figcaption>
+            </figure>
+        </section>
+        <hr class="horizontal-rule"/>
+        </header>
+
+        <!--=========================Main Section=======================================-->
+        <main>
+        <article id="about-lts">
+            <section id="sec-about-lts">
+            <h1 id="about-lts-heading" class="heading">
+                About
+                <abbr title="Little Taco Shop"
+                ><a href="index.html" target="_self" title="Little Taco Shop">LTS</a></abbr
+                >
+            </h1>
+
+            <p>
+                <abbr title="Little Taco Shop"
+                ><a href="#" target="_self">LTS</a></abbr
+                >
+                was founded in 2022. Our shop was built from a
+                <strong>love of Tacos 🌮🌮🌮</strong>.We hope our shop add a unique
+                and interesting place to our little town.
+            </p>
+            </section>
+            <section id="sec-taco-trevia">
+            <h3>Taco Trevia</h3>
+
+            <!--Usage of Detail and Summary elemet-->
+            <details id="taco-trevia-details">
+                <summary id="taco-trevia-summary" class="summary">
+                When did tacos first appeared in United States?
+                </summary>
+                <p>Jeffery M. Pilcher, taco historian and professor at University of Minnesota says
+                    the earliest mention of tacos in the United States are in a newspaper from 1905. <br>
+                    (Source: <a href="#" title="Smithsonian Mazagine"><em>Smithsonian Magazine/em></a>)
+                </p>
+            </details>
+            <hr class="horizontal-rule">
+            </section>
+        </article>
+
+        <article id="article-our-menu">
+            <h1 class="heading">Our Menu</h1>
+
+            <!--Menu Pricing Table-->
+            <section id="sec-menu--article-our-menu">
+                <table id="taco-menu-table">
+                    <caption>Our Tacos</caption>
+                    <thead>
+                        <th>Tacos</th>
+                        <th>Qty.</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <th rowspan="3">Crunchy</th>
+                            <td>1</td>
+                            <td>&dollar;1.50</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2</td>
+                            <td>&dollar;2.50</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>&dollar;3.25</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Soft</th>
+                            <td>1</td>
+                            <td>&dollar;2.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>&dollar;3.50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>&dollar;4.50</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Chips and Salsa &dollar;2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        </main>
+
+        <!--=============================Footer Section==============================-->
+        <footer id="home-footer">
+            <p>
+                <a href="#home-header">Back To Top</a>
+            </p>
+
+            <!--Copyright And Liscense-->
+            <p>
+                Copyright &copy; The Little Taco Shop
+            </p>
+        </footer>
+    </body>
+    </html>

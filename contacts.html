@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Pradeep Pandey" />
+    <meta name="Description" content="HTML elements practice website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="taco.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Little taco shop</title>
+  </head>
+  <body>
+
+    <!--=====================================Header Section===================================-->
+    <header id="home-header" class="header">
+      <section id="header-nav-section">
+        <h1 id="home-header-heading" class="heading">Contact Us</h1>
+
+        <!--Site Navigation Links-->
+        <nav id="navigation-bar" aria-label="Primary Navigation">
+          <ul id="header-navigation-items" class="navigation-items">
+            <li class="navigation-item">
+              <a href="index.html" target="_self">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a href="index.html#about-lts-heading">About LTS</a>
+            </li>
+            <li class="navigation-item">
+              <a href="index.html#article-our-menu">Our Menu</a>
+            </li>
+            <li class="navigation-item">
+              <a href="./store-hours.html">Store Hours</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section id="header-figure-section">
+        <figure id="header-figure">
+          <img
+            src="./images/tacos_closeup.png"
+            alt="Tacos And Drinks"
+            width="500"
+            height="300"
+            loading="lazy"
+          />
+          <figcaption id="header-figure-caption">
+            Little Taco Shop Tacos
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="horizontal-rule" />
+    </header>
+
+    <main id="store-hrs-main">
+      <h3>Our Contact Form</h3>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send us a message</legend>
+
+          <p>
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Dave Jane"
+              autocomplete="on"
+              required
+              autofocus
+            /><br />
+          </p>
+
+          <p>
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="on"
+              placeholder="example@gmail.com"
+              required
+            /><br />
+          </p>
+
+          <p>
+            <label for="message">Message: </label><br />
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              cols="50"
+            ></textarea>
+          </p>
+        </fieldset>
+        <button type="submit" aria-label="Send">Submit</button>
+        <button type="reset" aria-label="Reset">Reset</button>
+      </form>
+
+      <section id="address-sec">
+        <h3>Our Location</h3>
+        <address>
+          555 Taco Temptation Lane, Suite T <br />
+          Kansas City, MO 55555-555
+        </address>
+
+        <p>
+            <label for="tel">Phone: </label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]{3}[0-9{3}][0-9]{4}"
+        />
+        </p>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer id="home-footer">
+      <p>
+        <a href="#home-header">Back To Top</a>
+      </p>
+
+      <p>Copyright &copy; The Little Taco Shop</p>
+    </footer>
+  </body>
+</html>

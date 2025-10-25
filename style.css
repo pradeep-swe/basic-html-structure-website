@@ -1,0 +1,23 @@
+* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 5%;
+}
+
+table,
+td,
+th,
+caption {
+  text-align: justify;
+  border: 2px solid gray;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table caption {
+  border-bottom: none;
+}
